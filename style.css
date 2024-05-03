@@ -64,6 +64,8 @@ nav {
     background-color: #333;
     padding: 2rem;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .imgContainer img {
@@ -231,6 +233,10 @@ nav {
     }
     .flexx {
         display: block;
+        margin-top: 2rem;
+    }
+    .flexx p {
+        padding: 0 2rem 2rem 2rem;
     }
     .items {
        display: none;

@@ -225,11 +225,12 @@ nav {
     .container {
         display: flex;
         justify-content: center;
-        width: 100%;
-        margin: 0;
         border-radius: 0;
-        margin-top: 1rem;
+        margin: 1rem;
 
+    }
+    .flexx {
+        display: block;
     }
     .items {
        display: none;
@@ -323,7 +324,6 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 0.5rem;
     }
     .logo {
         display: flex;

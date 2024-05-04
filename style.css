@@ -315,6 +315,9 @@ nav {
         border-radius: 0;
         width: 100%;
     }
+    .about h1 {
+        padding-top: 3rem;
+    }
     .im img {
         margin: auto;
         width: 100%;

@@ -344,4 +344,7 @@ nav {
     .logo h1 {
         font-size: 0.9rem;
     }
+    .imgContainer {
+        width: 0;
+    }
 }

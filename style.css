@@ -392,6 +392,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0.5rem;
     }
     .logo {
         display: flex;
@@ -417,5 +418,8 @@ nav {
         background-position: center;
         background-size:contain;
         display: block;
+    }
+    .right {
+        padding: 0 2rem;
     }
 }

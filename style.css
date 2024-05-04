@@ -164,9 +164,9 @@ nav {
 }
 
 .para {
-    max-width: 100%;
-    font-size: 4vw;
-    padding-bottom: 4vw;
+    max-width: 80%;
+    font-size: 1rem;
+    padding-bottom: 2rem;
 }
 
 .para h1 {

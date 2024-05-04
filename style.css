@@ -157,13 +157,20 @@ nav {
     border-radius: 1rem;
 }
 
+.aboutTitle h1 {
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
 .para {
     max-width: 70%;
 }
 
 .im {
-    max-width: 30vw;
-    height: 25vw;
+  width: 50%;
+  height: auto;
 }
 
 .im img {
@@ -209,14 +216,12 @@ nav {
     font-size: 18px;
     line-height: 1.6;
     color: #666;
-    max-width: 40vw;
     padding: 4rem;
 }
 
 .right {
     flex: 1;
     padding: 0 4rem;
-    width: 300px;
     height: auto;
 }
 
@@ -249,6 +254,9 @@ nav {
     background-color: #555;
 }
 .hidden {
+    display: none;
+}
+.hiddenImg {
     display: none;
 }
 
@@ -291,8 +299,7 @@ nav {
         grid-template-columns: 1fr;
         width: 100%;
         padding: 0;
-        margin: 0;
-        justify-content: center;
+        margin: auto;
     }
     .about {
         grid-template-columns: 1fr;
@@ -386,5 +393,19 @@ nav {
     }
     .imgContainer {
         width: 0;
+    }
+    .hiddenImg {
+        width: 300px;
+        height: 200px;
+        background-image: url(images/illustImg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        display: block;
+    }
+    .im img {
+        width: 300px;
+        height: auto;
+        margin: auto;
     }
 }

@@ -4,66 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Ml9PwS+zOkoGkOmB2KzCzhfW2n0L8gCU4QO0BGKD2cEwvSUfvS1uZwpkQ3aJnbZl3h9XYB87K7tuKzZlIe1fQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Privacy</h1>
+        <div class="head">
+            <h1>Privacy</h1>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#importance">Importance</a></li>
-            <li><a href="#risks">Risks</a></li>
-            <li><a href="#protection">Protection</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>Privacy is the right of individuals to control or limit access to their personal information and activities.</p>
-    </section>
-    <section id="importance">
-        <h2>Importance</h2>
-        <p>Privacy is important for:</p>
-        <ul>
-            <li>Protecting personal information</li>
-            <li>Maintaining autonomy and freedom</li>
-            <li>Preventing identity theft and fraud</li>
-            <li>Building trust in online interactions</li>
-            <li>Preserving individual dignity</li>
-        </ul>
-    </section>
-    <section id="risks">
-        <h2>Risks</h2>
-        <p>Common risks to privacy include:</p>
-        <ul>
-            <li>Data breaches</li>
-            <li>Surveillance</li>
-            <li>Identity theft</li>
-            <li>Online tracking</li>
-            <li>Unauthorized access</li>
-        </ul>
-    </section>
-    <section id="protection">
-        <h2>Protection</h2>
-        <p>To protect privacy, individuals can:</p>
-        <ul>
-            <li>Use strong passwords and encryption</li>
-            <li>Be cautious with sharing personal information</li>
-            <li>Use privacy-enhancing technologies (e.g., VPNs, encrypted messaging)</li>
-            <li>Review and adjust privacy settings on websites and apps</li>
-            <li>Stay informed about privacy laws and regulations</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or inquiries, feel free to contact us:</p>
-        <p>Email: info@example.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
+    <main>
+        <div class="hidden" id="button"><i class="fas fa-expand"></i></div>
+        <div class="navigation">
+            <nav id="wrapper" class="open">    
+                <ul class="links" id="list">
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#importance">Importance of Privacy</a></li>
+                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><button class="btn"><a href="/courses/index.html">See other courses</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <section id="Introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Welcome to the world of privacy! In this lesson, we'll explore the concept of privacy 
+                    and why it's crucial in today's digital age. Privacy refers to the ability of individuals 
+                    to control their personal information and how it's collected, used, and shared by others. 
+                    Let's dive into the importance of privacy and how you can protect your personal data.
+                </p>
+            </section>
+            <section id="importance">
+                <h2>Importance of Privacy</h2>
+                <p>
+                    Privacy is essential for several reasons:
+                </p>
+                <ul>
+                    <li>Protecting personal information from unauthorized access</li>
+                    <li>Maintaining confidentiality and trust in relationships</li>
+                    <li>Preserving autonomy and individual freedom</li>
+                    <li>Preventing identity theft and fraud</li>
+                    <li>Ensuring fair and ethical use of data</li>
+                </ul>
+            </section>
+            <section id="best-practices">
+                <h2>Best Practices for Privacy</h2>
+                <p>
+                    To safeguard your privacy, consider implementing these best practices:
+                </p>
+                <ul>
+                    <li>Review and understand privacy policies before sharing personal information</li>
+                    <li>Use strong and unique passwords for online accounts</li>
+                    <li>Limit the amount of personal information you share online</li>
+                    <li>Regularly review privacy settings on social media and other platforms</li>
+                    <li>Avoid clicking on suspicious links or emails</li>
+                    <li>Encrypt sensitive communications and data</li>
+                    <li>Stay informed about privacy laws and regulations</li>
+                </ul>
+            </section>
+            <section id="resources">
+                <h2>Resources</h2>
+                <p>Explore these resources to learn more about privacy:</p>
+                <ul>
+                    <li><a href="https://www.privacyrights.org/">Privacy Rights Clearinghouse</a></li>
+                    <li><a href="https://www.eff.org/">Electronic Frontier Foundation (EFF)</a></li>
+                    <li><a href="https://www.privacyinternational.org/">Privacy International</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Privacy</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

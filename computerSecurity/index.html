@@ -5,65 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Security</title>
     <link rel="stylesheet" href="style3.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Ml9PwS+zOkoGkOmB2KzCzhfW2n0L8gCU4QO0BGKD2cEwvSUfvS1uZwpkQ3aJnbZl3h9XYB87K7tuKzZlIe1fQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Computer Security</h1>
+        <div class="head">
+            <h1>Computer Security</h1>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#risks">Risks</a></li>
-            <li><a href="#protection">Protection</a></li>
-            <li><a href="#software">Software</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>Computer security focuses on protecting computer systems and data from unauthorized access, theft, or damage.</p>
-    </section>
-    <section id="risks">
-        <h2>Risks</h2>
-        <p>Common risks to computer security include:</p>
-        <ul>
-            <li>Malware infections</li>
-            <li>Data breaches</li>
-            <li>Identity theft</li>
-            <li>Phishing attacks</li>
-            <li>Unauthorized access</li>
-        </ul>
-    </section>
-    <section id="protection">
-        <h2>Protection</h2>
-        <p>To protect computer systems, it's important to:</p>
-        <ul>
-            <li>Install and update antivirus software</li>
-            <li>Use strong passwords and two-factor authentication</li>
-            <li>Keep software and operating systems updated</li>
-            <li>Encrypt sensitive data</li>
-            <li>Regularly backup important files</li>
-        </ul>
-    </section>
-    <section id="software">
-        <h2>Software</h2>
-        <p>There are various software solutions available for computer security, including:</p>
-        <ul>
-            <li>Antivirus software (e.g., Norton, McAfee)</li>
-            <li>Firewalls (e.g., Windows Firewall, ZoneAlarm)</li>
-            <li>Encryption software (e.g., VeraCrypt, BitLocker)</li>
-            <li>Security suites (e.g., Kaspersky Total Security, Bitdefender)</li>
-            <li>Backup software (e.g., Acronis True Image, Carbonite)</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or inquiries, feel free to contact us:</p>
-        <p>Email: info@example.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
+    <main>
+        <div class="hidden" id="button"><i class="fas fa-expand"></i></div>
+        <div class="navigation">
+            <nav id="wrapper" class="open">    
+                <ul class="links" id="list">
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#Computer-security">Computer security</a></li>
+                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><button class="btn"><a href="/courses/index.html">See other courses</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <section id="Introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Welcome, students! In today's lesson, we're going to delve into the world of computer security. 
+                    Computer security is a crucial aspect of modern computing, focusing on protecting computer systems 
+                    and networks from various threats and vulnerabilities. By the end of this lesson, you'll have a better 
+                    understanding of what computer security entails and how you can contribute to making computing environments more secure.
+                </p>
+            </section>
+            <section id="objective">
+                <h2>Objective</h2>
+                <ol>
+                    <li>✔️Understanding the fundamentals of computer security.</li>
+                    <li>✔️Identifying common threats and vulnerabilities.</li>
+                    <li>✔️Learning best practices for securing computer systems and networks.</li>
+                </ol>
+            </section>
+            <section id="Computer-security">
+                <h2>Computer security</h2>
+                <ol>
+                    <li><h3>Understanding the importance of computer security</h3></li>
+                </ol>
+                <p>
+                    Computer security encompasses the techniques, technologies, and processes used to protect 
+                    computer systems and data from unauthorized access, alteration, or destruction. It involves 
+                    safeguarding the confidentiality, integrity, and availability of information stored on 
+                    computer systems and transmitted over networks.
+                </p>
+                <h3>Common Threats and Vulnerabilities</h3>
+                <p>
+                    There are various threats and vulnerabilities that computer systems and networks face, 
+                    including:
+                </p>
+                <ul>
+                    <li>Malware infections (viruses, worms, trojans, ransomware, etc.)</li>
+                    <li>Unauthorized access by hackers</li>
+                    <li>Phishing attacks targeting users</li>
+                    <li>Denial-of-Service (DoS) attacks</li>
+                    <li>Software vulnerabilities</li>
+                    <li>Weak authentication mechanisms</li>
+                </ul>
+                <h3>Best Practices for Computer Security</h3>
+                <p>
+                    To enhance computer security, it's essential to implement best practices such as:
+                </p>
+                <ul>
+                    <li>Regularly updating software and operating systems</li>
+                    <li>Using strong and unique passwords</li>
+                    <li>Enabling firewalls and antivirus software</li>
+                    <li>Encrypting sensitive data</li>
+                    <li>Implementing access controls and least privilege principles</li>
+                    <li>Conducting regular security audits and assessments</li>
+                </ul>
+            </section>
+            <section id="resources">
+                <h2>Resources</h2>
+                <p>Here are some useful resources for further learning about computer security:</p>
+                <ul>
+                    <li><a href="https://www.us-cert.gov/">United States Computer Emergency Readiness Team (US-CERT)</a></li>
+                    <li><a href="https://www.cisecurity.org/">Center for Internet Security</a></li>
+                    <li><a href="https://www.sans.org/">SANS Institute</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Computer Security</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

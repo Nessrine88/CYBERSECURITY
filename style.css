@@ -37,8 +37,11 @@ nav {
 }
 
 .items a {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     color: grey;
+}
+.items a:hover {
+    background-color: rgba(0,0,0,0.2);
 }
 
 .dropdown {
@@ -53,7 +56,7 @@ nav {
     top: 15px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 99;
     justify-content: flex-start;
   }
 
@@ -92,6 +95,7 @@ nav {
     height: 50vh;
 }
 
+
 .container {
     margin: 5rem 2rem;
     background-color: #333;
@@ -117,8 +121,9 @@ nav {
     width: 50%;
     height: 100%;
     color: #dddddd;
+    transition: width 0.5s ease;
+    animation: slideRight 1s forwards;
 }
-
 .content h1 {
     font-size: 4vw;
     font-weight: 900;
@@ -147,7 +152,12 @@ nav {
 
 .content button a {
     color: white;
+    padding: 1rem 1.5rem;
 }
+.content button a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
 
 .about {
     margin: 5rem 2rem;
@@ -277,6 +287,7 @@ nav {
         top: 4rem;
         padding: 0;
         padding: 0.5rem 0;
+        z-index: 999;
       }
       .items li{
         padding: 0.3rem;
@@ -301,6 +312,7 @@ nav {
 
     .flexx {
         display: block;
+       z-index: 9999;
     }
     .flexx p {
         padding: 0 2rem 2rem 2rem;
@@ -394,6 +406,7 @@ nav {
         padding: 0.5rem;
         font-size: 0.9rem;
     }
+   
     .imgContainer img {
        display: none;
     }
@@ -447,5 +460,4 @@ nav {
        width: max-content;
        margin: 0%;
     }
-    
 }

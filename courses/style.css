@@ -25,6 +25,10 @@ body {
     margin: 1rem;
     border: #1a1a1a 1px solid ;
     background-color: #2b2d31;
+    background-image: url(/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -38,9 +42,9 @@ body {
 }
 h1 {
     text-align: center;
-    padding: 1rem;
+    padding-top: 1rem;
     color: gray;
-    font-size: 56px;
+    font-size: 46px;
 }
 .course {
     display: flex;
@@ -48,6 +52,33 @@ h1 {
     align-items: center;
     background-color: #1a1a1a;
 }
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 50px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.course-link {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
     .courses {

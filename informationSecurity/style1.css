@@ -1,5 +1,7 @@
+/* External library import */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +10,21 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     padding: 0;
     background-color: #313338;
     color: #bab5bc;
-    
 }
 
+/* Anchor Styles */
+a {
+    color: #5865F2;
+}
+
+/* Button Styles */
 .btn {
     background-color: #5865F2;
     border: none;
@@ -24,26 +33,35 @@ body {
 .btn a {
     color: #fff;
 }
+
+/* Hidden Class Styles */
 .hidden {
     color: #fff;
     cursor: pointer;
+    position: fixed;
+    top: 6rem;
 }
+
+/* Heading Styles */
 h2 {
     color: #fff;
     padding-bottom: 1rem;
 }
 
+/* Paragraph Styles */
 p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-main  {
+
+/* Main Container Styles */
+main {
     display: flex;
     margin-left: 260px;
     margin-top: 100px;
     margin-bottom: 50px;
-
 }
 
+/* Header Styles */
 .head {
     background-color: #2b2d31;
     color: #fff;
@@ -54,18 +72,18 @@ main  {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100VW;
+    width: 100vw;
     z-index: 99;
     text-align: center;
 }
 
-
+/* Navigation Styles */
 nav {
     background-color: #2b2d31;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:100vmax;
+    height: 100vmax;
     width: 250px;
     position: fixed;
     top: 5rem;
@@ -74,7 +92,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-   width: 250px;
+    width: 250px;
 }
 
 nav ul li {
@@ -85,10 +103,9 @@ nav ul li a {
     display: inline-block;
     text-decoration: none;
     color: #c0c0c0;
-
     width: 250px;
     margin: 0;
-    padding: 2rem 0;
+    padding: 1.7rem 0;
     text-align: center;
     box-shadow: 0 2px 2px rgba(255, 255, 255, 0.5);
 }
@@ -97,10 +114,12 @@ nav ul li a:hover {
     background-color: gray;
 }
 
+/* Section Styles */
 section {
     padding: 20px;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #e0d8d8;
@@ -111,41 +130,41 @@ footer {
     width: 100%;
 }
 
-/* Media queries for responsiveness */
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
     nav {
         background-color: #2b2d31;
         display: flex;
         align-items: center;
         flex-direction: column;
-        height:100vmax;
+        height: 100vmax;
         width: 200px;
         position: fixed;
         top: 5rem;
         left: -250px;
-        overflow-x:hidden;
+        overflow-x: hidden;
         padding: 1rem;
     }
-   
- nav ul li a {
-    padding: 1rem 0;
- }
+
+    nav ul li a {
+        padding: 1rem 0;
+    }
+
     .hidden {
         display: block;
         font-size: 20px;
-        padding:0 rem;
+        padding: 0;
     }
- 
-    main  {
+
+    main {
         display: flex;
         margin-left: 10px;
-        margin-top: 80px;
+        margin-top: 8rem;
         margin-bottom: 50px;
-    
     }
-    .head h1 {
-        font-size: 27px;
+
+    .head {
+        font-size: 16px;
+        width: 100%;
     }
 }
-
-

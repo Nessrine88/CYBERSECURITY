@@ -28,6 +28,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-right: 4rem;
 }
 .flexx {
     display: flex;
@@ -40,9 +41,6 @@ nav {
     color: grey;
 }
 
-.items {
-    margin-right: 4rem;
-}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -53,19 +51,16 @@ nav {
     position: absolute;
     right: 10px;
     top: 15px;
-    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
     z-index: 1;
-    border-radius: 10px;
     justify-content: flex-start;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
     text-align: left;
-    background-color: #1A1A1A;
+    background-color: #2b2d31;
   }
 
   .dropdown-content a {
@@ -76,9 +71,6 @@ nav {
     border-radius: 20px;
   }
  
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
 
   
 
@@ -101,10 +93,10 @@ nav {
 }
 
 .container {
-    margin: 6rem 4rem;
+    margin: 5rem 2rem;
     background-color: #333;
-    padding: 4rem;
-    border-radius: 1rem;
+    padding: 6rem;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +122,6 @@ nav {
 }
 
 .content p {
-    max-width: 70%;
     display: flex;
     flex-wrap: wrap;
     text-justify: distribute;
@@ -155,11 +146,11 @@ nav {
 }
 
 .about {
-    margin: 8rem 4rem;
+    margin: 5rem 2rem;
     background-color: #dddddd;
     color: #1A1A1A;
-    padding: 4rem;
-    border-radius: 1rem;
+    padding: 8rem;
+    border-radius: 0.5rem;
 }
 
 .aboutTitle h1 {
@@ -272,32 +263,43 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    .items{
+        background-color: #2b2d31;
+        display: none;
+        width: 200px;
+        position: absolute;
+        float: right;
+        right: 0px;
+        top: 4rem;
+        padding: 0;
+        padding: 0.5rem 0;
+      }
+      .items li{
+        padding: 0rem;
+      }
+  
+      .items li:hover {
+        background-color: #1A1A1A;
+      }
+
     .hidden {
         display: block;
         margin-right: 1rem;
         color: #1A1A1A;
     }
-    .flexxx {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
     .container {
         display: flex;
         justify-content: center;
         border-radius: 0;
-        margin: 7rem 1rem 3rem 1rem;
+        margin: 0;
     }
 
     .flexx {
         display: block;
-        margin-top: 2rem;
     }
     .flexx p {
         padding: 0 2rem 2rem 2rem;
-    }
-    .items {
-       display: none;
     }
 
     .logo {
@@ -366,7 +368,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: max-content;
         margin: 0;
         border-radius: 0;
         padding: 0;
@@ -378,9 +380,9 @@ nav {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .content p {
-        max-width: 100%;
         font-size: 0.9rem;
         text-align: center;
+        padding: 1rem;
     }
     .content button {
         margin: 2rem 20%;
@@ -414,12 +416,15 @@ nav {
        width: 2rem;
        height: auto;
     }
+
     .logo h1 {
         font-size: 0.9rem;
     }
+
     .imgContainer {
         width: 0;
     }
+
     .hiddenImg {
         width: 300px;
         height: 200px;
@@ -429,8 +434,14 @@ nav {
         background-size:contain;
         display: block;
     }
+    
     .right {
         padding: 0 2rem;
+    }
+    .dropdown-content  {
+       padding: 0;
+       width: max-content;
+       margin: 0%;
     }
     
 }

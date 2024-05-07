@@ -8,21 +8,25 @@
 </head>
 <body>
     <header>
-       <h1>Information Security</h1>
-    <button class="btn"><a href="/index.html">See other courses</a></button>
+        <div class="head">
+                <h1>Information Security</h1>
+        </div>
     </header>
     <main>
+        <div class="hidden" id="button"><i class="fas fa-expand"></i>
+        </div>
         <div class="navigation">
-    <nav>
-        <img src="/images/logo.png" alt="">
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#best-practices">Best Practices</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+            <nav id="wrapper" class="open">    
+                <ul class="links" id="list">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+           
+            <li>  <button class="btn"><a href="/index.html">See other courses</a></button> </li>
+                </ul>
+            </nav>
+        </div>
 <div class="content">
     <section id="overview">
         <h2>Overview</h2>
@@ -60,4 +64,5 @@
         <p>&copy; 2024 Information Security</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

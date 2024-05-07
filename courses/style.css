@@ -26,7 +26,8 @@ body {
     margin: 5rem;
 }
 .course:hover {
-    background-color: #313338;
+    background-color: #313338
+    ;
 }
 h1 {
     text-align: center;
@@ -40,4 +41,18 @@ h1 {
     justify-content: center;
 
     background-color: #1a1a1a;
+}
+
+@media screen and (max-width: 768px) {
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+        place-content: center;
+        padding: 2rem ;
+        margin: 1rem;
+        border: #1a1a1a 1px solid ;
+        background-color: #2b2d31;
+    
+    }
 }

@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -17,6 +16,10 @@ body {
     padding: 0;
     background-color: #313338;
     color: #bab5bc;
+}
+h3 {
+    color: #77B477;
+    padding: 1rem;
 }
 
 /* Anchor Styles */
@@ -50,14 +53,14 @@ h2 {
 
 /* Paragraph Styles */
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
 }
 
 /* Main Container Styles */
 main {
     display: flex;
     margin-left: 260px;
-    margin-top: 100px;
     margin-bottom: 50px;
 }
 

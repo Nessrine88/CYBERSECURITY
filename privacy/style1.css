@@ -45,12 +45,12 @@ a {
 /* Heading Styles */
 h2 {
     color: #fff;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 /* Paragraph Styles */
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Main Container Styles */

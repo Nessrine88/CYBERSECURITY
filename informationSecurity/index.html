@@ -9,115 +9,188 @@
 <body>
     <header>
         <div class="head">
-                <h1>Information Security</h1>
+            <h1>Information Security</h1>
         </div>
+    <div style="padding: 3rem;"></div>
     </header>
     <main>
-        <div class="hidden" id="button"><i class="fas fa-expand"></i>
-        </div>
+        <div class="hidden" id="button"><i class="fas fa-expand"></i></div>
         <div class="navigation">
             <nav id="wrapper" class="open">    
                 <ul class="links" id="list">
                     <li><a href="#Introduction">Introduction</a></li>
                     <li><a href="#objective">Objective</a></li>
-                    <li><a href="#Information-security">Information security</a></li>
-                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#Information-security">Understanding Digital Threats</a></li>
+                    <li><a href="#best-practices">What are Security Mechanisms?</a></li>
                     <li><a href="#resources">Resources</a></li>
-           
-            <li>  <button class="btn"><a href="/courses/index.html">See other courses</a></button> </li>
+                    <li><button class="btn"><a href="/courses/index.html">See Other Courses</a></button></li>
                 </ul>
             </nav>
         </div>
-<div class="content">
-    <section id="Introduction">
+        <div class="content">
+            <section id="Introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Today, I want to talk to you about something really important protecting your devices and your personal information from people who might want to harm you online. We live in a world where technology plays a big part in our lives. We use our phones, tablets, and computers for everything from chatting with friends to doing homework and watching videos. But just like we lock our doors to keep our homes safe, we need to take steps to keep our digital world safe too.
 
-        <h2>Introduction</h2>
-        <p>
-            Welcome, students! In today's lesson, we're going to talk about a very important topic: 
-            information security. In our increasingly digital world, it's essential to know how to protect 
-            ourselves and our personal information online. By the end of this lesson, you'll have
-             a better understanding of what information security is and how you can stay safe while using the internet.
-        </p>
+                    So, let's talk about how bad people might try to access your devices and steal your information, and what you can do to stay safe.                
+                </p>
+                <div style="display: flex; justify-content: center;">
+                    <img src="/images/theif.webp" alt="" style="width: 50%; padding: 1rem;">
+                </div>
+            </section>
+            <section id="objective">
+                <h2>Objective</h2>
+                <ul>
+                    <li>✔️ how bad people might try to access your devices and steal your information?</li>
+                    <li>✔️ Discover mechanisms for protecting personal information online.</li>
+                </ul>
+            </section>
+            <section id="Information-security">
+                <h2>Understanding Digital Threats</h2>
+                <h3>Phishing</h3>
+                <div style="display: flex; justify-content: center;">
+                  <img src="/images/phishing.jpg" alt="" style="width: 30%; padding: 1rem;">
+                </div>
+                <p>
+                    One way bad people might try to get into your devices is through something called "phishing." This is when someone sends you a message or an email that looks like it's from a company or a friend, but it's actually a trick. They might ask you to click on a link or give them your password. If you do, they can steal your information and cause you harm.
+                </p>
 
-    </section>
-    <section id="objective">
-        <h2>Objective</h2>
-            <ol>
-                <li>✔️What is Information Security (InfoSec)?</li>
-                <li>✔️What are the 3 Principles of Information Security?.</li>
-                <li>✔️Discover strategies for protecting personal information online.</li>
-            </ol>
- 
-    </section>
-    <section id="Information-security">
-        <h2>Information security.</h2>
-        <ol><li><h3>Understand the importance of information security.</h3></li></ol>
-        <p>
-            Information security (sometimes referred to as InfoSec) covers the tools and processes that organizations use to protect information. This includes policy settings that prevent unauthorized people from accessing business or personal information. InfoSec is a growing and evolving field that covers a wide range of fields, from network and infrastructure security to testing and auditing.
+                <h3>Weak Passwords</h3>
+                <div style="display: flex; justify-content: center;">
+                  <img src="/images/password.gif" alt="" style="width: 30%; padding: 1rem;">
+                </div>
+                <p>
+                    Another way bad people can access your devices is if you have weak passwords. A weak password is easy for someone to guess or figure out. Maybe it's something simple like "123456" or "password." If someone guesses your password, they can get into your accounts and steal your information.
+                </p>
 
-            Information security protects sensitive information from unauthorized activities, including inspection, modification, recording, and any disruption or destruction. The goal is to ensure the safety and privacy of critical data such as customer account details, financial data or intellectual property.
-            
-            The consequences of security incidents include theft of private information, data tampering, and data deletion. Attacks can disrupt work processes and damage a company’s reputation, and also have a tangible cost.
-            
-            Organizations must allocate funds for security and ensure that they are ready to detect, respond to, and proactively prevent, attacks such as phishing, malware, viruses, malicious insiders, and ransomware.
-            
-        </p>
-        
-<h3>What are the 3 Principles of Information Security?</h3>
-<p>
-The basic tenets of information security are confidentiality, integrity and availability. Every element of the information security program must be designed to implement one or more of these principles. Together they are called the CIA Triad.
+                <h3>Unsecured Wi-Fi</h3>
+                <div style="display: flex; justify-content: center;">
+                  <img src="/images/public-wifi.gif" alt="" style="width: 30%; padding: 1rem;">
+                </div>
+                <p>
+                    Using unsecured Wi-Fi networks can also make it easy for bad people to access your devices. When you connect to a Wi-Fi network without a password, anyone else on that network can potentially see what you're doing online. This means they can steal your information without you even realizing it.
+                </p>
+                <h3>Malware</h3>
+                <div style="display: flex; justify-content: center;">
+                    <img src="/images/malware.gif" alt="" style="width: 30%; padding: 1rem;">
+                </div>
+                <p>
+                    Lastly, bad people can use something called "malware" to infect your devices and steal your information. Malware is a type of software that's designed to harm your computer or steal your information without you knowing. It can come from downloading files or apps from untrustworthy sources.
+                </p>
+               
+                <h2 id="best-practices">What are Security Mechanisms?</h2>
 
-<h4>Confidentiality</h4>
-Confidentiality measures are designed to prevent unauthorized disclosure of information. The purpose of the confidentiality principle is to keep personal information private and to ensure that it is visible and accessible only to those individuals who own it or need it to perform their organizational functions.
+                <p>
+                    Now that we know some of the ways bad people can access our devices, let's talk about what we can do to protect ourselves.
+                </p>
+                <p>
+                    The following diagram illustrates various mechanisms employed in information security:
+                </p>
+                <div style="display: flex; justify-content: center;">
+                    <img src="/images/cybersecurity.PNG" alt="" style="width: 85%; padding: 1rem;">
+                </div>
+                <h3>Strong Passwords</h3>
+                <p>
+                    Use complex passwords that include a combination of letters, numbers, and special characters. Avoid easily guessable passwords like "123456" or "password." Consider using passphrases, which are longer and easier to remember, such as "PurpleElephant$123."
+                </p>
+               <h3>Two-Factor Authentication (2FA)</h3>
+               <div style="display: flex; justify-content: center;">
+                <img src="/images/two-step-verification.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+               <p>
+                Enable two-factor authentication whenever possible. This adds an extra layer of security by requiring a second form of verification, such as a code sent to your phone, in addition to your password.
+               </p>
+               <h3>Update Software Regularly</h3>
+               <div style="display: flex; justify-content: center;">
+                <img src="/images/update.png" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Keep your devices and software up to date with the latest security patches. Updates often include fixes for vulnerabilities that could be exploited by hackers.
+            </p>
 
-<h4>Integrity</h4>
-Consistency includes protection against unauthorized changes (additions, deletions, alterations, etc.) to data. The principle of integrity ensures that data is accurate and reliable and is not modified incorrectly, whether accidentally or maliciously.
+            <h3>Use Secure Wi-Fi Networks</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/secure-wifi.webp" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Connect to Wi-Fi networks that are password protected and encrypted. Avoid connecting to public Wi-Fi networks without a Virtual Private Network (VPN) for added security.
+            </p>
+            <h3>Be Cautious of Phishing Attempts</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/prevent-phishing.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Always verify the sender's email address before clicking on links or downloading attachments in emails. Be wary of unsolicited messages asking for personal or sensitive information.
+            </p>
+            <h3>Install Antivirus Software</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/antivirus.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Use reputable antivirus software and keep it updated to detect and remove malware from your devices.
+            </p>
+            <h3>Encrypt Your Data</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/ENCRYPT.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Encrypt sensitive information stored on your devices or in the cloud. Encryption scrambles your data, making it unreadable to anyone without the decryption key.
+            </p>
+            <h3>Secure Your Devices</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/facial-print.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Use biometric authentication, such as fingerprint or facial recognition, to unlock your devices. Enable device locking mechanisms, such as PINs or passwords, to prevent unauthorized access.
+            </p>
+            <h3>Backup Your Data Regularly</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/backup.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Backup important files and data regularly to an external hard drive or cloud storage service. In the event of a security breach or data loss, you'll have a copy of your information available.
+            </p>
+            <h3>Educate Yourself</h3>
+            <div style="display: flex; justify-content: center;">
+                <img src="/images/200w.gif" alt="" style="width: 30%; padding: 1rem;">
+            </div>
+            <p>
+                Stay informed about cybersecurity best practices and common threats. Educate yourself and others about the importance of online safety and how to recognize and avoid potential risks.
+            </p>
+            <h2>Conclusion</h2>
+            <p>
+                In today's digital age, where technology is deeply intertwined with our daily lives, it's crucial to prioritize the protection of our devices and personal information. Just as we take measures to secure our physical belongings, such as locking our doors, we must also be proactive in safeguarding our digital world from malicious actors seeking to exploit vulnerabilities.
 
-<h4>Availability</h4>
-Availability is the protection of a system’s ability to make software systems and data fully available when a user needs it (or at a specified time). The purpose of availability is to make the technology infrastructure, the applications and the data available when they are needed for an organizational process or for an organization’s customers.
-</p>
-<div style="width:100%; display: flex; justify-content: center;">  
-<img src="/images/triangle.svg" alt="pricipales" style="width: 40%;">
-</div>
-<h3>Information Security vs Cybersecurity</h3>
-<p>
-    Information security differs from cybersecurity in both scope and purpose. The two terms are often used interchangeably, but more accurately, cybersecurity is a subcategory of information security. Information security is a broad field that covers many areas such as physical security, endpoint security, data encryption, and network security. It is also closely related to information assurance, which protects information from threats such as natural disasters and server failures.
+We've explored various tactics that bad actors may employ to access our devices and steal our information, ranging from phishing attempts and weak passwords to unsecured Wi-Fi networks and malware infections. These threats underscore the importance of remaining vigilant and informed about potential risks online.
 
-Cybersecurity primarily addresses technology-related threats, with practices and tools that can prevent or mitigate them. Another related category is data security, which focuses on protecting an organization’s data from accidental or malicious exposure to unauthorized parties.
-</p>
-    </section>
-    <section id="best-practices">
-        <h2>Best Practices</h2>
-        <p>Some best practices for information security include:</p>
-        <ul>
-            <li>Regularly updating software</li>
-            <li>Using strong passwords</li>
-            <li>Encrypting sensitive data</li>
-            <li>Implementing access controls</li>
-            <li>Conducting security training</li>
-        </ul>
-    </section>
+However, it's not all doom and gloom. By implementing security mechanisms such as using strong passwords, enabling two-factor authentication, updating software regularly, and practicing safe browsing habits, we can significantly reduce our exposure to cyber threats.
 
-    <section id="resources">
-        <h2>Resources</h2>
-        <p>Here are some useful resources for learning more about information security:</p>
-        <ul>
-            <li><a href="https://www.nist.gov/topics/cybersecurity">NIST Cybersecurity Framework</a></li>
-            <li><a href="https://www.cisecurity.org/">Center for Internet Security</a></li>
-            <li><a href="https://www.isc2.org/">(ISC)²</a></li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or inquiries, feel free to contact us:</p>
-        <p>Email: info@example.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
-</div>
-</main>
+Remember, security is a collective effort that requires ongoing awareness and proactive measures from each one of us. By educating ourselves, staying informed about cybersecurity best practices, and taking practical steps to protect our digital assets, we can create a safer online environment for ourselves and others.
+
+Together, let's empower ourselves with the knowledge and tools needed to navigate the digital landscape securely and confidently.
+            </p>
+                
+            <section id="resources">
+                <h2>Resources</h2>
+                <p>Here are some useful resources for learning more about information security:</p>
+                <ul>
+                    <li><a href="https://www.nist.gov/topics/cybersecurity">NIST Cybersecurity Framework</a></li>
+                    <li><a href="https://www.cisecurity.org/">Center for Internet Security</a></li>
+                    <li><a href="https://www.isc2.org/">(ISC)²</a></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>If you have any questions or inquiries, feel free to contact us:</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Information Security</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
